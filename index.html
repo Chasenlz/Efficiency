@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
-<!-- Ne faites pas attention au code, il est plutôt moche mais il fonctionne. Je vais me former correctement à Vue d'ici peu. -->
+<html lang="EN">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
-  <title>AXEL GUEUDIN | Freelance Graphic & UI Designer</title>
-  <meta name="description" content="Axel Gueudin, graphiste et UX/UI designer freelance basé à Rouen prêt à réaliser votre communication : logotype, identité visuelle, print et webdesign UX/UI" />
-  <meta name="keywords" content="axel, gueudin, brutalism, brutalist, portfolio, graphic design, ux, ui, Rouen, Graphiste, Freelance, Etudiant, Rouennais, 76, Graphisme, design, communication, agence " />
+  <title>Efficiency App | From general savings to travel planning, Efficiency has your back for all things budgeting!</title>
+  <meta name="description" content="Efficiency is the ultimate app to streamline your financial goals, whether it's travel, savings, or investments. Plan your dream trip to Rome in 3 months or set up a personalized savings plan, all with the help of AI." />
+  <meta name="keywords" content="Travel" />
 
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-touch-icon.png">
@@ -22,14 +21,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,bold|Work+Sans:regular,bold">
 
 
-  <meta property="og:title" content="AXEL GUEUDIN | Graphiste & UI Designer">
-  <meta property="og:locale" content="fr_FR">
-  <link rel="canonical" href="https://axelgueudin.fr">
-  <meta property="og:url" content="https://axelgueudin.fr">
-  <meta property="og:site_name" content="AXEL GUEUDIN | Graphiste & UI Designer">
-  <meta property="og:description" content="Axel Gueudin, Graphiste et UX/UI designer !">
+  <meta property="og:title" content="Efficiency App | From general savings to travel planning, Efficiency has your back for all things budgeting!">
+  <meta property="og:locale" content="en_EN">
+  <meta property="og:site_name" content="Efficiency App">
+  <meta property="og:description" content="Efficiency App">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@lXlON">
+  <meta name="twitter:site" content="@Hypothetical">
 </head>
 
 <body class="">
@@ -46,8 +43,8 @@
     </div>
 
 <header class="bb">
-  <h1>Axel GUEUDIN</h1>
-  <h2>Branding & UI</h2>
+  <h1>Efficiency</h1>
+  <h2>Travel & Bugetting</h2>
 </header>
 
 <!-- Info -->
@@ -58,29 +55,16 @@
       <div class="row">
         <div class="s12 m12 l12">
           <p class="fittext-h1 reveal">
-            Hi, I'm Axel!
+            Welcome to the Future of Travel!
           </p>
           <p class="flow-text reveal">
-            Living in Rouen. FR.
+            Efficiency
           </p>
           <p class="flow-text">
-            Looking for a job as Graphic or UI/UX Designer.
-             <br />
-            & Available for freelance missions!
+            Put Your Traveling Woes At Ease
           </p>
           <p class="flow-text">
-            <a href="https://twitter.com/lXlON" class="underline" target="_blank" rel="noreferrer, noopener">DM me</a> if you want to say hello 👋.
-          </p>
-          <p class="flow-text">
-            <a href="mailto:axelgueud@gmail.com" class="underline">E-mail</a>
-            /
-            <a href="https://dribbble.com/lXlON" class="underline" target="_blank" rel="noreferrer, noopener">Dribbble</a>
-            /
-            <a href="https://behance.net/axelgueudin" class="underline" target="_blank" rel="noreferrer, noopener">Behance</a>
-            /
-            <a href="https://github.com/axelgueudin/" class="underline" target="_blank" rel="noreferrer, noopener">Github</a>
-            /
-            <a href="https://www.linkedin.com/in/axelgueudin/" class="underline" target="_blank" rel="noreferrer, noopener">LinkedIn</a>
+            <a href="https://app.uizard.io/p/61460a85" class="underline">Check Out Our App</a>
           </p>
         </div>
       </div>
@@ -102,33 +86,6 @@
       </div>
     </div>
 </div>
-
-
-    <div id="portfolio" class="row">
-      <div class="project-container s12 m12 l12">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="project col s12 m12 l12 mb-2" v-for="project in projects">
-
-              <div class="description col s12 m2 l2 bt">
-                  <h3 class="project-title flow-text" v-html="project.title"></h3>
-                <p class="tag flow-text" v-html="project.tag"></p>
-                <p class="details flow-text" v-html="project.description"></p>
-              </div>
-
-              <div class="slider col s12 m9 l9" ref="slider">
-                <a :href="'/work/' + project.link">
-                  <img loading="lazy"  v-for="image in project.images" :src="image.src" :alt="image.alt"/>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="js/app.js"></script>
